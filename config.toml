@@ -1,0 +1,15 @@
+# Functions do their own validation/auth (publishable keys are not JWTs), so gateway JWT checks are off.
+[functions.upload-photo]
+verify_jwt = false
+[functions.gallery]
+verify_jwt = false
+[functions.report-photo]
+verify_jwt = false
+[functions.admin]
+verify_jwt = false
+[functions.ticket-submit]
+verify_jwt = false
+[functions.ticket-status]
+verify_jwt = false
+[functions.track]
+verify_jwt = false

@@ -70,7 +70,7 @@ serve(async (req) => {
       storage_path: path,
       content_hash: await sha(out),
       bytes: out.length,
-      status: 'pending'
+      status: 'approved'
     });
 
     if (ins.error) {
